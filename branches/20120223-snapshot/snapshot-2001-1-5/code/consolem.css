@@ -1,0 +1,52 @@
+BODY {
+	background-color: #003000;
+	font-family: "Arial";
+}
+
+A:link {color: #8080FF; text-decoration: none}
+A:visited {color: #8080FF; text-decoration: none}
+A:active {color: #FFFFFF; text-decoration: none}
+A:hover {color: #FFFFFF; text-decoration: none}
+
+H1 {
+	color: #60FF60;
+	font-size: 48px;
+	font-weight: 900;
+}
+
+H2 {
+	color: #00C000;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+P {
+	text-indent:5%;
+}
+
+DIV.EN {
+	color: #00A000;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 900;
+}
+
+DIV.CH {
+	color: #00A000;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+B {
+	font-weight: 700;
+}
+
+A {
+	font-weight: 900;
+}
+
+FONT.DK {
+	font-size: 4px;
+	color: #000000;
+}

@@ -1,0 +1,55 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="../menu.html"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="040126.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="040128.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2004/01/27</H3>
+<P>因為看上X-Drive, 但是又覺得實用度低....
+<P>該怎麼說呢? 如果要去中部或南部, notebook是帶定的. 那時X-Drive
+等於是多的. 
+<P>而且用X-Drive理論上並不會比較快, 速度上限是受制於記憶卡速度. 
+買來真的只有台北的場省背notebook出來而已....O_O 但~ X-Drive2殼是2800, 
+筆電HD部份二手中等大小可能一千搞定. 如果是新的....10G 要一千六多. 
+整體買起來會破四千的啊!!
+<P>說起來只是notebook上的2000開關機慢死了....等等!!
+<P>開關機?!
+<P>吼!!馬上開始搞改造運動!!
+<P>第一步, 用partition magic 挪出空間, 切了個partition給FAT32 . 
+接著用cd-rw弄了個開機光碟, 開始作multiboot . 原始目標: 灌Linux !! XD
+<P>中間因為第一次弄那種hda1是ntfs, hda2是fat32 的, 開機搞了蠻久的. 
+不過後來發現nt的bootmanager比我想像中強, 可以指向NTFS內的boot sector file
+ (本來以為只找得到FAT上的) , 因此拆掉中間用到個新抓的smart boot manager
+ (free) , 一樣用bootpart把MBR 弄回NT bootmanager . 改了改boot.ini, 完美. 
+<P>接著找夠小的linux (夠小才夠快) ....吼~ 一樣~ 
+先用knoppix試一下開機再說....吼!!看了看它的開機一直到進XWin桌面....
+一樣夠慢啊!! X_X
+<P>該死. 接著找它的精簡改裝, 找到Damn Small Linux....50MB. 實驗結果差不多. 
+看著它偵測硬體的部份, 我不禁要想去搬掉它一大堆我不想要的device, 再拆X , 
+只留usb 就好. 原始目標是這樣....
+<P>但是看到Damn Small Linux的討論找著找著....DOS ?!
+<P>再靈機一動找DOS 的 USB....喔靠~~~ 喜出望外啊~~~ DOS 下驅動USB 的
+mass storage 已經有driver現成可用啦!! XD 要比開機速度, 我看DOS 
+也用不著一秒啊!!
+<P>接著就直接在FAT32 上的95 DOS command mode 下開始實驗並改裝. 
+<P>更扯的是....把以前碟片上的norton commander找出來用. 喔喔喔喔喔喔!!
+太完美了啊!!! 當最後完成整個multi boot選項功能表, 選USB Device後開到norton 
+commander, 只要21秒!!然後copy file (等於是從FZ10上copy照片到硬碟) , 
+結束後該作啥? 關機? 哈我電源一按就好了, 關機所需是0 秒....
+<P>完美~ 太完美了~~~
+</BODY>
+</HTML>

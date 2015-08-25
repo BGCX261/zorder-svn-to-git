@@ -1,0 +1,52 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="../menu.html"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="040222.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="040224.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2004/02/23</H3>
+<P>吼!!今日不上班~ 休假一天.
+<P>續搞linux !!今天的課題是: 好用的mail client.
+<P>本來理想上是要抓thunderbird來裝, 但是網站上給的binary都是gtk2+xft或gtk1的.
+結果是看到信都是一堆亂碼. 此外, 舊的netscape mail格式都倒還能全吃進去 (unix標準嘛~ )
+, 但是中文檔名/目錄名不行. 這部份全都改用純英文, 誓死只用純plain-text mail 格式!! XD
+<P>好~ 都是亂碼.... (太慘了) 改用wine來跑win32的netscape看看? XD 結果是跑不起來全死.
+用力抓到netscape 4.x的安裝程式, 一樣在wine下沒法跑. 結果....拿netscape當mail client
+的美夢破碎. 另外~ wine跑win32的thunder bird一樣死. :Q
+<P>這樣一看上面的模式....轉到linux 下後我反而有兩種平台的binary檔可以選擇?! XD
+實在是要大呼wine萬歲啊~~~
+<P>win32 程式完蛋後回頭看*nix上有啥好用mail client. 要求很簡單: pop3也可以沒有
+ (我大可以用perl來收) , 只要能看各種編碼的mail內容就行了!! :Q
+並且要直接支援標準的mail filesystem....
+<P>結果找了陣, 其它的都用自訂格式的file, 不合標準!!
+<P>另外也往webmail 的方向找....呃呃~~ 感覺上size都很大....=_= 喔靠~~~
+簡簡單單弄個cgi 去parse content有那麼難嗎?!然後直接output成html有那麼難嗎? O_O
+編碼全都交給browser, 用perl寫我看只要50K 不到吧~~~ 唉~~~
+<P>好. 接下來, 評估mozilla . 雖然之前對它的印象一直都是慢肥, 但為了看mail,
+就還是試試看....嘖! 由aptitude上看, 整個裝起來50MB....而firefox與thunderbird
+各單裝加起來是60MB....X_X 但但~~~ 裝了mozilla後....還是感覺它的介面太肥了啊!!
+X_X
+<P>而且~ browse 用firebird, 看信用mozilla, 整體裝起來合計80MB!!更虧了....O_O
+<P>一去看cospho, 該死~ 有bug . 再仔細看, 天啊~ 竟然是mozilla 1.0 版?!
+百萬年前的東西了!!救人啊~~~ 不過沒法子, 為了看信, 先忍著點吧....X_X
+<P>除了看信這邊讓人不夠滿意....其它部份仍然運作良好~~ 另外, perl缺了很多模組,
+本想直接把以前一堆mirror與備份的script直接拿來跑, 看來還得再整一整才行....
+<P>另外把find/awk/sed等研究了番....呼呼~~~ 重生出更小的script了~
+真是簡單明快的一行!!越來越有一行script的架勢了....console 萬歲~~~ command line
+萬歲~~~ 自由軟體萬歲~~~ PC萬歲~~~ XD (呼口號~~~ )
+</BODY>
+</HTML>

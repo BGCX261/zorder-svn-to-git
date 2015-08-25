@@ -1,0 +1,68 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="../menu.html"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="040428.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="040430.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2004/04/29</H3>
+<P>昨日賽車瘋, 今日家中混.
+<P>這兩天都在搞cdi 燒錄的問題. 其實它本身沒啥問題, 但是要在linux
+上實現可就有問題.
+<P>cdi 是DiscJuggler這程式的燒錄格式, 其實本身也沒多偉大,
+但偏偏就有個地方是別的格式沒的: 多session在單檔案內表示. 話說之前在linux 下,
+雖然是快樂燒iso , 但這iso 只是單一track ....難度最低的.
+<P>如果要多track 或者是音樂與資料混合? 呼呼, 這可就得多下些指令了,
+不是呆呆的cdrecord 只接個device 與iso 檔就了事. 另一個深度一些些的就是cdrdao,
+嘿, 它就可read/write 多track 的cd, 使用的格式是cue/bin ,
+一個描述檔加上一或多個raw 檔.
+<P>但是問題來了: 那multi session呢?
+<P>cdrdao不支援. =_=
+<P>因此當我想燒剛剛p2p 來的DC遊戲時, desktop 的linux 下我是傻眼了. O_O
+<P>好!!孤狗出擊!!
+<P>資訊一: nero/DiscJuggler/CloneCD在wine下沒法跑, 此路不通.
+<P>資訊二: 有個cdirip的程式可以解出cdi 內的東東?!抓來一跑....呼呼!!
+生出了一個wav , 一個iso, 一個cue . 擺明了就是那些東東嘛!!
+<P>資訊三: 有個網頁指出了燒dc的cdrom 的方法. 一看: cdrecord 兩次, multisession,
+第一次cdda, 第二次mode2 data....?!可信度很高!!但是實作後....喔靠, 殘念.
+偏偏我解出來的wav還有iso 用這燒法就掛了, 因為爆超過700M,
+剛剛好就是多一點點塞不下!!死....O_O
+<P>資訊四: 把買來的DC附的CVS1用notebook上的軟體讀, 確定2 session, 且session 1
+是cdda, session 2是mode2 data. 不過session 1等於虛設!!不是真的要音軌資料,
+而是DC就是得這樣認片子....
+<P>好!!這次硬下no gap的指令把空的session 1 音軌塞進去....燒成了!!! 但是放進DC
+一讀....失敗....O_O 至此飛盤三片出現....死.
+<P>絕體絕命....認栽了, 裝個win98 來燒片吧.
+<P>結果裝win98 時發生可怕的東西. 因為win98 不認得linux 的partition,
+加上我沒有任何primary partition 是內有FAT 16/32, 所以它問說 "是否要啟始硬碟
+ (英文) " ....結果選yes 重開後竟然說 "正在格式化硬碟" !!大驚!!再重開後一看,
+幸好它認不得linux 因此format失敗, 但是repartition 成功了....所有的partition
+都不見了....=_= (大怒)
+<P>當下我就猜出發生了啥事, 也當下很肚爛死微軟爛斃的用詞. 幫我重建partition
+就直說嘛, 用那啥對電腦白癡的語氣寫那啥說明與選項?!叉的死比爾....
+幸好它的安裝程式也不過如此, 只是毀了我的partition, 但partition內資料全在.
+<P>努力用notebook備用連上網抓小工具, 讀點文件, 用gpart 把全部的partition弄回來
+(偉哉knoppix) , lilo也搞好, 又安全回到linux 下了.  (呼....死微軟你搞不死我的)
+<P>記取教訓後, 把第二個primary partition 東西搬出來, 讓它變FAT16 , 灌98.
+邊灌邊想, 既然如此, 這個少用的98就當作燒DC用以及RO用吧.
+<P>灌好後實驗DiscJuggler, 喔耶, 終於能用了, 也燒成了.
+<P>實驗RO....慘, 沒想到我的desktop 機的3D如此龜速, FPS 低到可以目測
+ (我看是10以下吧) ....還是用notebook玩吧. 燒完後, 重開, 回到linux 下.
+xmule 繼續, 抓抓抓.
+<P>另標了個DC的搖桿, 得等它結標, 希望是低於100元的價,
+嘎哈哈哈哈一定要逢低買的啦.
+</BODY>
+</HTML>

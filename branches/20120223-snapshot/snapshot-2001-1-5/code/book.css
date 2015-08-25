@@ -1,0 +1,63 @@
+@font-face {
+	font-family: Acidic;
+	font-style: normal;
+	src: url("../font/acidic0.eot");
+}
+
+@font-face {
+	font-family: "CarolinesHand Regular";
+	font-style: normal;
+	src: url("../font/carolin0.eot");
+}
+
+BODY {
+	background-color: #000000;
+}
+
+A:link {color: #804020; text-decoration: none}
+A:visited {color: #604040; text-decoration: none}
+A:active {color: #FFFFFF; text-decoration: none}
+A:hover {color: #FFFFFF; text-decoration: none}
+
+H1 {
+	color: #FF6060;
+	font-size: 48px;
+	font-family: "Acidic", "Arial";
+	font-weight: 900;
+}
+
+H2 {
+	color: #800000;
+	font-size: 24px;
+	font-family: "Arial";
+	font-weight: 900;
+}
+
+P {
+	text-indent:5%;
+}
+
+DIV.EN {
+	color: #400000;
+	font-family: "CarolinesHand Regular";
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 900;
+}
+
+DIV.CH {
+	color: #400000;
+	font-weight: 100;
+	font-family: "Arial";
+	font-size: 16px;
+	line-height: 18px;
+}
+
+B {
+	font-family: "Arial";
+	font-weight: 700;
+}
+
+A {
+	font-weight: 900;
+}

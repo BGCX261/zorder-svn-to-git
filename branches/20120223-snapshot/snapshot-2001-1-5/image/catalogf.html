@@ -1,0 +1,18 @@
+<HTML><HEAD>
+<TITLE>Z-Order - BRILLIANCE</TITLE></HEAD>
+<LINK rel="stylesheet" href="../code/image.css" type="text/css">
+<BODY>
+<SCRIPT LANGUAGE="javascript1.2" SRC="imagenum.js"></SCRIPT>
+<SCRIPT LANGUAGE="javascript1.2"><!--
+document.write('<center><HR width=680><P><nobr><font color=#ffc0c0>Adjust your screen Brightness/Contrast<br><img src="bw.gif" width=320 height=40><br>觀賞前請調整一下螢幕的亮度/對比</font></nobr><P><table width=650><tr>')
+
+for (i=1;i<=INum;i++) {
+	document.write('<th><img src="'+i+'i.jpg" width=100 height=150 border=1><br><nobr><A href="'+i+'m.jpg" target=newpto><img src="s.gif" width=50 height=20 border=0></A><A href="'+i+'.jpg" target=newpto><img src="l.gif" width=50 height=20 border=0></A></nobr><br><br></th>');
+	if (i%4==0 && i>0) document.write('</tr><tr>');
+}
+
+document.write('</tr></table><font color=#c0d0ff>All '+INum+' published now.</font> | <A href="./" target=_top>[BACK]</A><HR width=680></center>',1);
+//--></SCRIPT>
+</HTML>
+</BODY>
+</HTML>

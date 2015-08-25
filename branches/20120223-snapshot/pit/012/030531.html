@@ -1,0 +1,56 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="./"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="030530.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="030601.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2003/05/31</H3>
+<P>今天照樣早上是有自動醒來....不過轉個身又繼續睡. 真正爬起來時....喔耶!!
+七點四十多!!昨晚是十二點多睡~ 所以我漸漸的要調成每天睡滿八小時了~~
+<P>繼續回傳照片, 還剩個七百多張. 
+<P>CV2 那邊, 早上試了動態載入任意swf 並配合JScript 傳入變數, 作了個mp3 
+loader....成功!!另外在server上裝了lame, 試了試command line opotion, 運作OK!!
+<P>不過flash最低只能動態放16kbps mono的檔案, 算一算每秒約2K, 
+一分鐘是120K, 四分鐘就是480K ....O_O 比起之前硬壓swf 的8kbps 
+的每秒1K還是有差, 不過幸好它的播放是stream的, 因此還算可以忍受....
+<P>可是這疙瘩一直在, 最後還是忍不住去研究為甚麼embed 的mp3 可以而load的mp3 
+不行. 找了extract的工具來後把embed 的mp3 解出來看, 對照我作的mp3 後發現....
+啊啦? 一個sample rate是11.025kHZ, 另一個是8kHZ? O_O 接著再去找lame的參數, 
+調整調整後....啊哈!!解決了!!喔耶!!每秒1K的資料流萬歲!!照此計算, 
+一首歌大約會是240K左右....讚!!
+<P>接著又把fscommand的導入導出都test OK並且寫好, 雙向通訊都OK!!FLASH 萬歲~ 
+<P>下午午睡起來, 開始測試討論區module的一個嚴重問題: 
+因為目前資料是每一百筆一群, 所以在一些討論區內文很大時....
+載入與運算會跟龜一樣慢!! @_@ 搞了半天, style裏面的hidden
+還有位置重疊是主要原因....一百個layer 疊在一起, 其實沒道理這麼慢的
+ (尤其是它們早就都hidden了....該死的微軟!!) 不過....
+反正試了半天確定原因是這個, 就把default 的style 改成順著排下來, 
+也改了client端閱覽的模組, 總算~ 問題解決了....
+<P>改完後繼續翻討論區, 又發現了一些轉碼漏掉的地方....
+突然想到乾脆把沒轉碼的字output出來再補就好了, 小改一下轉換程式, 
+又讓它去跑了. 
+<P>在網上搜尋『紫川』, 這回找到的更完整了~ 轉成big5後, 
+又繼續從上回斷掉的地方再往下看....
+<P>看著看著自動update DNS的程式跳了訊息出來, 想說去check 一下, 
+順便看看那個分享器那邊可不可以改改程式....結果發現....哇勒? O_O 
+分享器上已經有自動update的程式了!!而且其中一個就是支援www.dyndns.org的
+....=_= 無力~ 於是把線上常駐perl程式內的dyndns.pl 拿掉, 在分享器上設定OK. 
+嗯~ 系統速度又快一滴滴了....
+<P>晚上發現一堆沒轉碼的字有很多是sjis的字元....一火大就把sjis
+的對應表也作出來, 加進原有的iemap. 等下再跑跑看有沒漏網之魚....
+</BODY>
+</HTML>

@@ -1,0 +1,31 @@
+<HTML><HEAD><META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A:link {text-decoration: none; color: #FFE0FF;}
+A:visited {text-decoration: none; color: #FFE0FF;}
+A:active {text-decoration: none; color: #FFE0FF;}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:5%;
+	margin-left:5%;
+}
+--></STYLE>
+<BODY text=#a0e0FF bgcolor=#000000>
+<A href="../../menu.html"><img src="../icon/m.gif" width=32 height=32 border=0 alt="back to menu...."></A>
+<A href="wordz010227.html"><img src="../icon/p.gif" width=32 height=32 border=0></A>
+<A href="wordz010225.html"><img src="../icon/n.gif" width=32 height=32 border=0></A>
+<H3>2001/02/26</H3>
+<P>
+<P>今天整天在排工作處的網頁，還有自己的網頁。
+<P>終於找到常久以來搞不清發生問題在哪的Netscape 的BUG....@_@ 原來只要是設成
+NoneCache的檔案，如果它內含JavaScript且在reload check中發現更新了，
+則在第1000 byte 與第1001 byte的交界上在直譯過程中會斷開。
+萬一這斷開剛好讓語法不對，就會產生錯誤訊息。
+<P>這問題也會在Local File上發生。敘述到這邊，就想把Netscape 
+的程式設計者抓出來毒打一頓....太～遜～了～這不像是到4.x 版還會有的BUG 。
+<P>我作了個很蠢的PERL LIB給CV的CGI 用，就是....塞一堆無用的JavaScript
+空白段落，避開那第1000 byte 的BUG 。 @_@
+</BODY>
+</HTML>

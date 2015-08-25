@@ -1,0 +1,81 @@
+<HTML><HEAD>
+<TITLE>Z-Order - BRILLIANCE</TITLE></HEAD>
+<LINK rel="stylesheet" href="../code/image.css" type="text/css">
+<BODY>
+<TABLE width=100% height=100%>
+<TR><TD>I take photo, the most i take are cosplayers. Oftentimes,</TD><TD align=right>我 拍 照 ， 拍 的 多 半 是 cosplayer 。 大 多</TD></TR>
+<TR><TD>I am care about shutter on people; sometimes,</TD><TD align=right> 時 候 重 點 在 拍 被 拍 者 ， 少 數 時</TD></TR>
+<TR><TD>I pay my attention on good creation.</TD><TD align=right> 候 重 點 在 拍 好 的 作 品 。 不 管</TD></TR>
+<TR><TD>Photographers can be serious</TD><TD align=right> 是 單 眼 或 數 位 ， 都 可 以 認</TD></TR>
+<TR><TD>or eazy on both SLR or DC.</TD><TD align=right> 真 或 隨 意 。 認 真 之 時 ， 出</TD></TR>
+<TR><TD>Be serious, creation gained;</TD><TD align=right> 來 的 是 作 品 ； 隨 意 之 時</TD></TR>
+<TR><TD>take eazy, photograph</TD><TD align=right> ， 得 到 的 是 照 片 。 這 邊</TD></TR>
+<TR><TD>will be got. I put</TD><TD align=right> 放 的 ， 是 我 最 喜 歡 的 作</TD></TR>
+<TR><TD>some of my favourite</TD><TD align=right> 品 當 中 的 一 些 。 我 喜</TD></TR>
+<TR><TD>creations here. By</TD><TD align=right> 歡 這 些 作 品 的 原 因 有</TD></TR>
+<TR><TD>many reasons I like</TD><TD align=right> 很 多 ， 也 許 是 因 為 光</TD></TR>
+<TR><TD>these , maybe it's</TD><TD align=right> 線 的 魔 術 成 功 地 在 我</TD></TR>
+<TR><TD>because that brilliance</TD><TD align=right> 預 想 中 發 出 美 妙 的 音</TD></TR>
+<TR><TD>dances as my wish like the</TD><TD align=right> 符 ； 也 許 是 那 瞬 間 的 感</TD></TR>
+<TR><TD>magic with rhythm; maybe</TD><TD align=right> 覺 我 將 無 法 再 次 得 到 ；</TD></TR>
+<TR><TD>it's because that I can't get the</TD><TD align=right> 也 許 是 因 為 那 代 表 著 我</TD></TR>
+<TR><TD>same feeling again; maybe it's</TD><TD align=right> 進 步 的 階 段 ； 也 許 ， 我 也</TD></TR>
+<TR><TD>because the one stands for my</TD><TD align=right> 說 不 出 來 我 喜 歡 那 張 照 片</TD></TR>
+<TR><TD>adcance; maybe I can't point it out clearly.</TD><TD align=right> 的 原 因 。 無 論 如 何 ， 看 到 這</TD></TR>
+<TR><TD>No matter what, when see these, I can feel</TD><TD align=right> 些 ， 我 就 能 再 次 感 覺 到 創 造 作</TD></TR>
+<TR><TD>the dreamy feeling on creating, I invite you to enjoy this.</TD><TD align=right>品 的 美 妙 感 覺 ， 邀 請 你 來 一 起 分 享 。</TD></TR>
+<TR><TD></TD><TD align=right></TD></TR>
+</TABLE>
+<SCRIPT LANGUAGE="javascript1.2" SRC="../code/zlib.js"></SCRIPT>
+<SCRIPT LANGUAGE="javascript1.2" SRC="imagenum.js"></SCRIPT>
+<SCRIPT LANGUAGE="javascript1.2"><!--
+NowP=Math.floor(Math.random()*INum)+1;
+NxtP=2;
+MovX=0;
+PWay=0;
+
+for (i=1;i<=INum;i++)
+	MakeL('PTO'+i,'<img src="'+i+'i.jpg" width=100 height=150><br><nobr><A href="'+i+'m.jpg" target=newpto><img src="s.gif" width=50 height=20 border=0></A><A href="'+i+'.jpg" target=newpto><img src="l.gif" width=50 height=20 border=0></A></nobr>',0);
+
+
+CenterL('PTO'+NowP,0,0);
+OnOffL('PTO'+NowP,1);
+
+MakeL('PMSK','<img src="photomask.gif" width=300 height=150>',1);
+MakeL('PPT','<A href="javascript:ChPTO(1);"><img src="../icon/index/p.gif" width=32 height=32 border=0></A>',1);
+MakeL('NPT','<A href="javascript:ChPTO(-1);"><img src="../icon/index/n.gif" width=32 height=32 border=0></A>',1);
+MakeL('ShowN','<font color=#c0d0ff><nobr><a href="catalog.html" target=_top>All</a> '+INum+' published now.</nobr></font>',1);
+MakeL('BWP','<nobr><font color=#ffc0c0>Adjust your screen Brightness/Contrast<br><img src="bw.gif" width=320 height=40><br>觀賞前請調整一下螢幕的亮度/對比</font></nobr>',1);
+CenterL('PMSK',0,-10);
+CenterL('PPT',-80,0);
+CenterL('NPT',80,0);
+CenterL('ShowN',0,100);
+CenterL('BWP',0,-150);
+
+function MovPTO() {
+	MovX+=PWay;
+	CenterL('PTO'+NowP,MovX+PWay*10,0);
+	CenterL('PTO'+NxtP,MovX,0);
+	if (MovX!=0) setTimeout('MovPTO()',40);
+	else {
+		OnOffL('PTO'+NowP,0);
+		OnOffL('PPT',1);
+		OnOffL('NPT',1);
+		NowP=NxtP;
+	}
+}
+
+function ChPTO(I) {
+	NxtP=(NowP+INum-1-I)%INum+1;
+	MovX=-I*100;
+	PWay=I*10;
+	OnOffL('PPT',0);
+	OnOffL('NPT',0);
+	OnOffL('PTO'+NxtP,1);
+	MovPTO();
+}
+
+//--></SCRIPT>
+</HTML>
+</BODY>
+</HTML>

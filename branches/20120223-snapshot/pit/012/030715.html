@@ -1,0 +1,39 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="./"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="030714.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="030716.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2003/07/15</H3>
+<P>今天則是研究起vpn 還有ssh .
+<P>尤其是ssh , 它的port forward功能八成能讓我開成連進公司後門!!
+<P>vpn 的部份....因為我們用的是cisco 的vpn client, 
+偏偏我又在微軟的撥接設定那邊也看到vpn . 此vpn 與彼vpn 差在哪, 的確該研究研究. 
+<P>網路上看了堆文件, 發現....又是協定之爭. 應用先有, 商人猛跟. 微軟一看vpn 
+市場看好就推了個PPtP, 是為第二 (或許吧) 代的vpn 標準協定. cisco 
+則把這標準又整了自己推的另一標準成為第三代協定L2TP. 
+<P>硬體上倒也蠻多router 啥的內建vpn server. 
+<P>運氣好我可以用最低成本的軟體方法 (指最不占memory/disk) 
+讓家裏電腦完全透通公司, 而不是用公司配發的cisco vpn, 那樣子在家工作也方便囉~ 
+<P>notebook也可以整合至此, 一週帶回家一次就好了. 
+<P>今天試了很多ssh port forward實驗, 基本上試成通的了, 
+但是反應上卻總是有點怪怪的. 由於forward 出來的port只能在該機作local 
+connection, 所以得再作一次local forward 至另一port並指定可以remote 
+connection到這port, 才算是完全forward 出來. 用telnet直接測那一重與二重的
+port看來是沒問題, 但是vnc 卻似是不通. 嗯, 得再實驗看看. 
+</BODY>
+</HTML>

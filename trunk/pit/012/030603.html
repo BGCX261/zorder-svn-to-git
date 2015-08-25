@@ -1,0 +1,43 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="./"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="030602.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="030604.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2003/06/03</H3>
+<P>自己醒來!!救人!!如果我還是一直才睡六小時就自動醒來, 
+那我以前當兵前自豪的每天睡滿八小時要怎麼辦? O_O
+<P>今天幫CV2 加上藏起來的程式, 昨晚睡前有人建議的. 寫完後繼續測, 
+發現了一個自己的bug , 修掉. 可是在工具列模式下....該死!!發現一個微軟的bug !!
+鳥斃了!!
+<P>這個bug 是....如果把new array與非同frameset下的window內的array concat
+的話, 那個new array會變成單元素的array....=_= 我之所以說它是bug , 是因為....
+如果concat的是同frameset 下的array, 就不會發生....試想想, concat array與
+frameset有啥關係啊?! O_O 微軟真是要把我給氣死了~ 最後我加了個length fix , 
+把它解掉了. 
+<P>剛光顧著解, 沒有去測看IE6 是否有把那個bug fix 掉....
+<P>接著發現perl module內的smtp不通, 原因不明 (以前用hinet 的卻沒問題) , 
+於是改用IO::Socket....呼!!超小的!!擺進寄發認證信的cgi 內....WORK!!
+<P>接著作星光認證的部份....也完成了!!
+<P>接著爬些小細節, 包括認證點數的計算, 小修飾等等. 
+<P>到了晚上, 研究MSN.pm, 接著測試msn 的行為模式....簡易!!因此就把MSN.pm
+抽離出我要的部份, 作了個小小的msn 取buddylist程式....當然囉, 
+這個就是用來作MSN 認證的~ :P 
+<P>晚上九點, 熱, 開窗, 喝昨天買的5 折果汁....啊~ 果然還是柳橙汁香甜!! O_O 
+昨天喝的蘋果汁簡直是白開水一樣....
+</BODY>
+</HTML>

@@ -1,0 +1,36 @@
+BODY {
+	background-color: #F0F0FF;
+	line-height: 26px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+}
+
+A:link {color: #000080; text-decoration: none}
+A:visited {color: #000080; text-decoration: none}
+A:active {color: #A0A0FF; text-decoration: none}
+A:hover {color: #A0A0FF; text-decoration: none}
+
+H1 {
+	color: #304080;
+	font-size: 48px;
+	line-height: 50px;
+	font-weight: 900;
+}
+
+H2 {
+	color: #008040;
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: 900;
+}
+
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:5%;
+	margin-left:5%;
+}
+
+A {
+	font-weight: 900;
+}

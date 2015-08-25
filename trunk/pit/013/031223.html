@@ -1,0 +1,35 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="../menu.html"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="031222.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="031224.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2003/12/23</H3>
+<P>上午開會....
+<P>下午繼續撐MGServer的程式. 改了半天在解一個多client login的鎖死問題,
+此外也冒出設計上的一些想法. 由於輸出入部份我又獨立出一個叫Control Unit 的程式庫 (簡稱MCU)
+, I/O 上演化出多重輸入與多重輸出的概念. 以傳統MUD 來講, 一login 後就理所當然是自己的I/O ,
+但如果附身在別人身上呢?  (為了DEBUG 或其它更有趣的用途) 我LOGIN , 接著我的INPUT
+可以當成別人的INPUT , 接著別人的OUTPUT送回給我....嗯!!感覺上很有趣也很有潛力!!
+<P>第一個要作的當然就是LOG !!每個MCU 建立時自動就建個內定OUTPUT到log 檔上,
+如此一來除錯資訊與平衡資料取樣就比傳統log 豐富很多!!第二個是把MOB 的設計也考慮進MCU ,
+這樣一來像是直接控制召喚物或是操作MOB 去耍玩家 (嘿嘿....=_= ) 或者是更瘋狂的....
+使用以舊資料分析而得的指令作為MOB AI的來源之一.... (進~ 化~ )
+<P>超讚!!
+<P>於是一邊除錯一邊把MCU 的程式碼抽出來建好....
+</BODY>
+</HTML>

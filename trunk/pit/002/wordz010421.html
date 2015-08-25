@@ -1,0 +1,45 @@
+<HTML><HEAD><META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A:link {text-decoration: none; color: #FFE0FF;}
+A:visited {text-decoration: none; color: #FFE0FF;}
+A:active {text-decoration: none; color: #FFE0FF;}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:5%;
+	margin-left:5%;
+}
+--></STYLE>
+<BODY text=#a0e0FF bgcolor=#000000>
+<A href="../../menu.html"><img src="../icon/m.gif" width=32 height=32 border=0 alt="back to menu...."></A>
+<A href="wordz010422.html"><img src="../icon/p.gif" width=32 height=32 border=0></A>
+<A href="wordz010420.html"><img src="../icon/n.gif" width=32 height=32 border=0></A>
+<H3>2001/04/21</H3>
+<P>今天給自己放假一天，玩電腦。
+<P>又把redhat拿出來玩了。這回一樣在VMWare機器內裝，
+不過安裝程式卻是挑繪圖模式的GUI 。結果，
+哪些package 要裝不裝都可以看得比較仔細，發現如果gcc 啥的語言發展套件/ 原始碼/ 
+等還有X 下的dm/ap 完全不裝，裝起來約是300MB 。奇怪，還是覺得有點肥。 O_O
+<P>內定不能不裝的套件我看了看，除了PERL以外其它我都不大確定是啥東東。
+rpm 我是想用，可是之後自己手動裝了幾個rpm 套件後卻拆不掉? X_X 
+與我想的有點出入，可能是還不會用。而X 那邊，startx後只有xterm 可用，
+正是我想要的，因為底下我只想跑VMWare。接著，把VMWare for linux裝起來，WORK!
+<P>那麼，大體上把Linux 當成VM的Host應該是差不多了，只剩Driver。
+DFE-530 TX rev.B ，裝不起來....O_O 主要是make時有錯誤訊息，
+可能是我又少裝了啥套件 (在make前還被逼著把gcc / kernal的header 
+files啥的都裝起來) 。另外，要裝TNT2 M64的driver時也一樣，
+雖有現成的module可裝，但是也出了問題，感覺上親自make可能比較好。
+<P>到此為止，感覺上無法避免掉親自make kernal或不裝gcc 。照這樣計算，
+還不如不要用rpm ，所有程式全都親自make來裝，這樣的話答案就是：
+換用我第一次上手時裝的slackware會比較小且好。
+<P>這回學會在DOS 下用loadlin 去boot linux，我開了兩套VM裝了兩份Linux，
+一個是在VM下與真實機器下都可以互換著用的；另一個是VM內專用的，
+可以在前面那個linux 開不起來時用來在linux partition 中copy或修改檔案。
+開機時lilo.conf老是要換來換去，最後終於弄了個穩定的設法。
+<P>很快的一天被我玩完了，把linux 的虛擬碟啥的砍了，暫時忍下，
+下次換slackware 試試。剛剛想到，其實我要的是directX，明天來試2K的VMWare
+內的DirectX 跑起來如何。
+</BODY>
+</HTML>

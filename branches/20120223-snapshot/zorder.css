@@ -1,0 +1,333 @@
+html {
+    scrollbar-arrow-color:#6B9ABD;
+    scrollbar-base-color:#FBFAF5;
+    scrollbar-shadow-color:#999999;
+    scrollbar-face-color:#EFFBFF;
+    scrollbar-highlight-color:#cococo;
+    scrollbar-darkshadow-color:#FFFFFF;
+    scrollbar-3dlight-color:#C0C0C0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    background: #FFFFFF;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+HR {
+    clear: both;
+    width: 80%;
+    height: 2px;
+    margin-top: 7px!important;
+    margin-bottom: 7px!important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    color: #A0A0FF;
+    font-size: 0px;
+    background-color: #A0A0FF;
+}
+
+A {
+	text-decoration: none;
+	color: #0040A0;
+}
+
+INPUT, TEXTAREA, SELECT {
+	font-size: 14px;
+	height: 23px;
+	padding: 2px;
+	width: 100px;
+	border: 1px solid #4040A0;
+	background-color: #C0E0FF;
+	margin-left: 5px;
+}
+
+TEXTAREA {
+	width: 80%;
+	height: 320px;
+}
+
+FORM {
+	margin: 0px;
+}
+
+#nav {
+    clear: both;
+    text-align: left;
+    padding: 5px;
+    padding-top: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #E0E0FF;
+    border-top: 2px solid #8080C0;
+    border-bottom: 2px solid #8080C0;
+}
+
+#nav A {
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    background-color: #E0D0FF;
+    border: 1px dotted #808080;
+}
+
+#nav A:hover {
+    background-color: #E0F0FF;
+    border: 1px solid #000000;
+}
+
+.rightpan {
+    float: right;
+    clear: both;
+    border-left: 1px dashed #808080;
+    width: 30%;
+}
+
+.diary {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+.diary .msgs {
+    clear: both;
+    margin: 30px 160px 10px 40px;
+}
+
+.diary .msgs .msg {
+    clear: both;
+    border: 1px solid #FF8080;
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #FFF0D0;
+}
+
+.diary .msgs .title {
+    float: right;
+    text-align: center;
+    width: 130px;
+    padding: 5px;
+    clear: none;
+    border: 0px;
+    margin-left: 15px;
+    color: #600030;
+    background-color: #FFE0F0;
+    border-left: 1px dashed #800000;
+    border-bottom: 1px dashed #400000;
+}
+
+.diary .msgs .title DIV {
+    border-bottom: 1px solid #F0D0E0;
+    margin-bottom: 2px;
+}
+
+.diary .msgs .title .no {
+    font-weight: 900;
+    color: #A020A0;
+    letter-spacing: 2px;
+}
+
+.diar .msg div.cnt {
+    float: none;
+    clear: none;
+    width: 100%;
+    border: 1px solid #ff0000;
+    text-align: left;
+}
+
+.diary .msg P {
+    text-indent:5%;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    clear: none;
+    color: #003030;
+}
+
+.diary .msgs div.status {
+    float: none;
+    clear: both;
+    width: 100%;
+    text-align: right;
+    padding-right: 0px!important;
+    padding-right: 10px;
+    color: #4080A0;
+    border: 0px;
+    border-bottom: 2px solid #C00000;
+    background-color: #FFC0C0;
+}
+
+.guestbook {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+.guestbook FORM {
+    width: 30%;
+    border: 3px double #A0A0FF;
+    padding: 4px;
+    background-color: #E0FFFF;
+}
+
+.guestbook FORM DIV {
+    clear: both;
+    width: 100%;
+}
+
+.guestbook FORM DIV DIV {
+    width: 20%;
+    float: left;
+    background-color: #A0C0FF;
+    padding: 2px;
+    padding-top: 4px;
+    padding-left: 10px;
+    margin: 1px;
+    margin-left: 0px;
+}
+
+.guestbook FORM INPUT, .guestbook FORM SELECT {
+    float: left;
+    width: 75%!important;
+    width: 79%;
+    margin: 1px;
+}
+
+.guestbook FORM INPUT#submit {
+    clear: both;
+    float: none;
+    margin: 1px;
+    margin-left: 70%!important;
+    width: 30%!important;
+    width: 100%;
+    color: #F0F0FF;
+    font-weight: 900;
+    background-color: #204080;
+    border: 1px dashed #00A0FF;
+}
+
+.guestbook FORM TEXTAREA {
+    clear: both;
+    margin-right: 2px;
+    margin-left: 0%;
+    margin-top: 5px;
+    height: 100px;
+    width: 100%;
+}
+
+.guestbook .msgs {
+    clear: both;
+    width: 50%!important;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 15%!important;
+}
+
+.guestbook .msgs .msg {
+    clear: both;
+    border: 1px solid #8080FF;
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #D0FFF0;
+}
+
+.guestbook .msgs .title {
+    float: left;
+    width: 40%;
+    padding: 5px;
+    clear: none;
+    border: 0px;
+    margin-right: 10px;
+    color: #003060;
+    background-color: #E0F0FF;
+    border-right: 1px dashed #000080;
+    border-bottom: 1px dashed #000040;
+}
+
+.guestbook .msgs .title DIV {
+    border-bottom: 1px solid #D0E0F0;
+    margin-bottom: 2px;
+}
+
+.guestbook .msgs .title .no {
+    font-weight: 900;
+    color: #702020;
+}
+
+.guestbook .msg div.cnt {
+    float: none;
+    clear: none;
+    width: 100%;
+    border: 1px solid #ff0000;
+    text-align: left;
+}
+
+.guestbook .msg P {
+    text-indent:5%;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    clear: none;
+    color: #003030;
+}
+
+.guestbook .msgs div.status {
+    float: none;
+    clear: both;
+    width: 100%;
+    text-align: right;
+    padding-right: 0px!important;
+    padding-right: 10px;
+    color: #4080A0;
+    border: 0px;
+    border-bottom: 1px solid #000040;
+    background-color: #C0C0FF;
+}
+
+.absscroll {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+}
+
+.abstop {
+    float: right;
+    position: relative;
+    z-index: 999;
+    right: 18px;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity=70,style=0);
+}
+
+p.img {
+    display: block;
+    float: left;
+    background: #ecc;
+    padding: 5px;
+    margin: 10px;
+    font-size: 11px;
+}
+
+p.img img {
+    display: block;
+    margin: 5px;
+    border: 0;
+}

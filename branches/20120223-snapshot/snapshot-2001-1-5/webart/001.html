@@ -1,0 +1,39 @@
+<HTML><HEAD>
+<SCRIPT LANGUAGE="javascript1.2" SRC="../code/zlib.js"></SCRIPT>
+</HEAD><BODY bgcolor=#000000 text=#ffffff>
+<table width=100% height=100% border=0>
+<tr><td colspan=2><I><b><font style="font-size:90px" color=#a0ffff><nobr>Prismatic</nobr></font></b></I>
+<tr><td align=right><i>光學的
+<tr><td><i>三原色
+<tr><td align=right><i>構成
+<tr><td><i>一切色彩
+<tr><td align=right><i>網點
+<tr><td><i>肉眼的
+<tr><td align=right><i>自然混色
+<tr><td valign=bottom><A href="../intro/worksf00.html"><IMG SRC="../icon/console/prev.gif" width=110 height=40 border=0></A>
+<td align=right width=70% valign=bottom><A href="../intro/worksf00.html"><IMG SRC="../icon/console/next.gif" width=110 height=40 border=0></A>
+</table>
+<SCRIPT LANGUAGE="javascript1.2"><!--
+MakeL('RL','<img src="001/r0.gif" width=270 height=270>',1);
+MakeL('GL','<img src="001/g0.gif" width=270 height=270>',1);
+MakeL('BL','<img src="001/b0.gif" width=270 height=270>',1);
+RGBA=0;
+RLP=0;
+
+function DoRGB() {
+	RLP++;
+	RLP%=150;
+	RLV=2*Math.abs(RLP-50);
+	if (RLV<20) RLV=20;
+	if (RLV>100) RLV=100;
+	RGBA+=10;
+	RGBA%=360;
+	CenterL('RL',ZCos(RGBA,RLV),ZSin(RGBA,RLV));
+	CenterL('GL',ZCos(RGBA+120,RLV),ZSin(RGBA+120,RLV)+1);
+	CenterL('BL',ZCos(RGBA+240,RLV)+1,ZSin(RGBA+240,RLV));
+	setTimeout('DoRGB()',50);
+}
+
+DoRGB();
+//--></SCRIPT>
+</BODY></HTML>

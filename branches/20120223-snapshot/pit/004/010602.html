@@ -1,0 +1,28 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #006000}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:5%;
+	margin-left:5%;
+}
+--></STYLE>
+<BODY text=#004000 bgcolor=#E0F0C0 background="bg.gif">
+<A href="./"><img src="icon/m.gif" width=32 height=32 alt="回到主選單"></A>
+<A href="010603.html"><img src="icon/p.gif" width=32 height=32 alt="次日"></A>
+<A href="010601.html"><img src="icon/n.gif" width=32 height=32 alt="前日"></A>
+<H3>2001/06/02</H3>
+<P>睡得很晚，十一點多起來。
+<P>今天預定就是納涼、休閒、混。
+<P>晚上看了一下Cospho的三機分散式架構的情形，一號機還是負賀過重。
+我猜原因是因為CV以外的cgi 全都由一號機承擔，或者是因為nfsd及maxClient設到120 
+的httpd 的問題。不過連了連發現靜態網頁在這種情形下高速依舊，
+所以後者的可能性很低。
+<P>想了想，CV外的cgi 負荷最大的就是照片室中英文版與日文版的部份，
+那邊因為還懶得改，一直都沒作成像中文版一般的precompile 靜態html。
+明天來改。
+</BODY>
+</HTML>

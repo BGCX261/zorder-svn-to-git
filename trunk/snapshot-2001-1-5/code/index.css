@@ -1,0 +1,32 @@
+BODY {
+	background-color: #000000;
+}
+
+A:link {color: #FFA0A0; text-decoration: none}
+A:visited {color: #FFA0A0; text-decoration: none}
+A:active {color: #FFFFFF; text-decoration: none}
+A:hover {color: #FFFFFF; text-decoration: none}
+
+TD {
+	color: #FF6060;
+	background-color: #000000;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+}
+
+TD.TOP {
+	font-size: 14px;
+	line-height: 14px;
+	height: 20px;
+	color: #802020;
+	background-color: #FFFFFF;
+}
+
+#CBM {
+	color: #A0A000;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 700;
+	background-color: #006040;
+}

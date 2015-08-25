@@ -1,0 +1,17 @@
+BODY {
+	background-color: #000000;
+}
+
+A:link {color: #C0C0A0; text-decoration: none}
+A:visited {color: #C0C0A0; text-decoration: none}
+A:active {color: #FFFFFF; text-decoration: none}
+A:hover {color: #FFFFFF; text-decoration: none}
+
+TD {
+	font-size: 15px;
+	color: #FFD0FF;
+}
+
+A {
+	font-weight: 900;
+}

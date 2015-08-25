@@ -1,0 +1,37 @@
+<HTML><HEAD><META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A:link {text-decoration: none; color: #FFE0FF;}
+A:visited {text-decoration: none; color: #FFE0FF;}
+A:active {text-decoration: none; color: #FFE0FF;}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:5%;
+	margin-left:5%;
+}
+--></STYLE>
+<BODY text=#a0e0FF bgcolor=#000000>
+<A href="../../menu.html"><img src="../icon/m.gif" width=32 height=32 border=0 alt="back to menu...."></A>
+<A href="wordz010326.html"><img src="../icon/p.gif" width=32 height=32 border=0></A>
+<A href="wordz010324.html"><img src="../icon/n.gif" width=32 height=32 border=0></A>
+<H3>2001/03/25</H3>
+<P>總算可以好好地靜下來弄電腦了。
+<P>一直在網上找了老半天，終於發現我買的MS6337主機板的問題，很多人都碰到了。
+那就是，音效卡在頻率調離開正規的66/100/133 外太多的話，onboard 的AC97音效就會不見。
+這個不見也有可能是BIOS或主機板設計的BUG ，因為在開機時這個DEVICE在BIOS LIST 
+上就已經不見了。
+<P>不見不是大問題，因為我還有一塊YMF724可以插。但是此時的不見並非真的不見，
+而是會和插上的音效卡相沖，同時BIOS內對於onboard AC97 sound 的設定也會失效。
+就算你disable 它，列表上看不到，但是不管裝98/ME/2000/NT都一樣會音效卡裝不起來。
+@_@ 這個問題在國外的測試網站也有篇review有講到，測的人根本搞不懂為何會如此。
+<P>由於我是外頻從66設到99，結果發生了這問題。接著，我跳JUMP把外頻直接設到100 ，
+問題就解決了。 O_O 完全沒道理，聽說是這塊板子的除頻有問題。解決後試著把YMF724和
+onboard AC97一起ENABLE，嘿嘿，照樣能用，兩邊都會發聲。
+<P>測試ME時很不習慣它的一當就差不多完蛋的這件事。開機時間方面，後來我把NT
+的一些device disable 掉後，開起來速度已經逼近ME了。ME開機約要15秒至20秒，
+NT開機則約要30秒左右。
+<P>在這幾天的測試下，我ME/NT/2000都試過了，最後還是回到NT。
+</BODY>
+</HTML>

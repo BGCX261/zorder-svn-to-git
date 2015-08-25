@@ -1,0 +1,47 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="./"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="030716.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="030718.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2003/07/17</H3>
+<P>喔耶!!果然!!開了local connection這option後~ vnc 連通成功了!! XD
+<P>ssh 萬歲!!port forward萬歲!! XD
+<P>唯一缺點: 因為安全上的限制, forward出去的port只能local connection. 所以!!
+接著再作個local forward, 把允許外接的選項打開, 就好啦!! :D
+如此一來就可以連那個中繼站, 直通我公司內的vnc server!! :P
+<P>另一個可能性是....notebook上的vnc server一直作connect to client的動作,
+這方法應該也可行~ 反正client就只有我家在跑~ 別處可不行哩~ 如果想要別處連,
+那就拿我家桌面轉接吧~ :P
+<P>講到轉接~ vnc reflector應該也可行~ 不過connect to client一樣要一直作,
+為的怕是斷線. 不過它只有source code以及win32 binary, 拿到freebsd上去compile
+卻死了....也沒有freebsd port. 所以就暫時算了. 剛剛一寫突然想到, 可以在家跑
+vnc reflector 玩玩....晚上回家試試....
+<P>接著在公司這邊測起了各個ssh client ....目前的一個問題是: ssh connection
+總是會timeout, server會踢人. 因此很多ssh 教學中port forward 拿sleep n
+指令掛著的方法是不可行的. 試了ssh (from openssh) , plink, 都一樣.
+<P>最後只好拿putty 當client, 開keep connection. 然後這個forward 要常掛著,
+因此下的指令是sleep 3600 (每小時重連一次) , script用bat 就夠了, 整體搭起來後
+....呼呼~ 哇哈哈~~開後門程式完成!! XD
+<P>再配watchcat把這script還有特別設好的putty forward窗藏起來, 完美!!
+<P>昨天研究的另一個東西是....有沒有netbios name -> domain name -> ip的現成東東
+....結果是沒有....:Q 最後自己手寫了個perl script作這個, one click
+把所有網路磁碟指到家裏....嗯!!讚!!
+<P>接著就是~ 抓檔休閒囉~~ 啊? 這週我好像公司工作的進度比較少....=_=
+<P>CV2 的討論區改寫!!勢在必行啊!!
+</BODY>
+</HTML>

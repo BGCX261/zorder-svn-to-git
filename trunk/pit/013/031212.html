@@ -1,0 +1,44 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="../menu.html"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="031211.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="031213.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2003/12/12</H3>
+<P>CV3 補了些新的聲音~ 分別作為聊天窗, 斷線等用途. 
+<P>娛樂區架構先出來了, 現在看了看作出來的很多區, 開始考慮補icon 以及desktop 
+化. 當然不會是像CV2 的那種OS化~ 不過某種程度上的偽windows/xwin 是一定要的
+....|D 因為我自己常常也得仔細看才找得到設定, 此時用icon
+讓它們易於分辨就很重要了~ 
+<P>在聲音架構確定穩定前, 暫時mp3 player先不會作出來. 這邊一不小心就會走向CV2 
+的龜速與當機之路, 得先考慮清楚作法才行. 當然~ song data用現有的jsd 架構, 
+至少在翻頁以及載入速度上已經是必然的OK了. 只得再自讚自嘆一聲: 
+我的jsd 程式庫實在是太讚啦~ XD
+<P>今天一整天在寫上午突然冒出的新點子 (喔喔!!我的無敵女友是幸運星啊~ XD) , 
+就是內建平假片假輸入法. 本來是半小時就完成了, 但是在Firebird上測時....乖乖!!
+該死!!發現了innerHTML在textarea以及input text 下是不通的!!仔細想想, 
+我看可能mozilla 的innerHTML 的定義是嚴謹的『在tag 內包涵的code』吧!! =_= 
+所以textarea新input 的字以及input 跟本是放在value 內的東西是不接受滴!!
+<P>好!!為了這個問題只好想想看mozilla 下是不是我作另一個轉換function. 
+測了半天....該死. 自己用unescape作出來的字元....不行! 好. 
+自己想法子轉成unicode....不行! 該死!!那我從textarea內抓總行了吧? O_O 成功!!
+喔靠~ 最後生出了一隻萬用的UTF8轉換function , 雖然有點白癡....
+不過至少已經不再是IE專用了!! X_X 好!!把新的function套好, 判斷式合流, 萬歲~ 
+新向上的相容性仍未被擊倒!! XD 好樣的日文輸入法~ 我自己都覺得很好用啊!!
+<P>晚上則是在各個輸入的地方補上輸入法支援碼. 絕讚.
+</BODY>
+</HTML>

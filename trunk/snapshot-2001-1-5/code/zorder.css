@@ -1,0 +1,82 @@
+@font-face {
+	font-family: Acidic;
+	font-style: normal;
+	src: url("../font/acidic0.eot");
+}
+
+@font-face {
+	font-family: "CarolinesHand Regular";
+	font-style: normal;
+	src: url("../font/carolin0.eot");
+}
+
+BODY {
+	background-color: #000000;
+	color: #FF8040;
+}
+
+A:link {color: #FFA0A0; text-decoration: none}
+A:visited {color: #FFA0A0; text-decoration: none}
+A:active {color: #FFFFFF; text-decoration: none}
+A:hover {color: #FFFFFF; text-decoration: none}
+
+H1 {
+	color: #FF6060;
+	font-size: 72px;
+	font-family: "Acidic", "Arial";
+	text-align: center;
+	font-weight: 900;
+}
+
+H2 {
+	color: #FF4040;
+	font-size: 36px;
+	font-family: "Arial";
+	font-weight: 900;
+	margin-left: 12%;
+}
+
+HR {
+	width: 60%;
+	align: center;
+}
+
+P {
+	text-indent:5%;
+	margin-right:10%;
+	margin-left:10%
+}
+
+DIV.EN {
+	font-weight: 900;
+	font-family: "CarolinesHand Regular";
+	font-size: 20px;
+	line-height: 24px;
+}
+
+DIV.CH {
+	font-weight: 100;
+	font-family: "Arial";
+	font-size: 18px;
+	line-height: 24px;
+}
+
+UL {
+	text-indent:0%;
+	margin-right:12%;
+	margin-left:15%
+}
+
+OL {
+	text-indent:0%;
+	margin-right:12%;
+	margin-left:15%
+}
+
+B {
+	font-family: "Arial";
+}
+
+A {
+	text-align: center;
+}

@@ -1,0 +1,43 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<TITLE>Z-Order - Words</TITLE></HEAD>
+<STYLE><!--
+A {text-decoration: none; color: #20D0FF}
+P {
+	line-height: 135%;
+	text-indent:5%;
+	margin-right:15%;
+	margin-left:15%;
+}
+TD {
+	font-size: 14px;
+	line-height: 150%;
+}
+--></STYLE>
+<BODY text=#104020 bgcolor=#0090D0>
+<A href="../menu.html"><img src="icon/m.gif" width=20 height=20 border=0 alt="回到主選單"></A>
+<A href="040225.html"><img src="icon/p.gif" width=20 height=20 border=0 alt="前日"></A>
+<A href="040227.html"><img src="icon/n.gif" width=20 height=20 border=0 alt="次日"></A>
+<H3>2004/02/26</H3>
+<P>今天繼續從Office連回家作linux的調教!! (鞭) XD
+<P>昨晚看了hdparm 以及udma等kernel參數或module參數, 大體上的結論是: dma100早就開了!! O_O
+<P>由hdparm上顯示的參數看來, 我的硬碟到dma100, 光碟到dma33, CDR是PIO .
+除了32 bits存取沒開以外, 其它都已經到頂啦~
+<P>而32 bits存取開與關各試了一下傳輸率....並沒有比較高!! -_-
+<P>因此~ 在copy時CPU 吃到100%現在認為是mc的問題, 這個之後再作實驗就好了.
+<P>cdrecord方面, 今天挖到個參數....顯然!!用不著再掛ide-scsi了~ 嘖嘖,
+果然相信module上的訊息是對的. 不過反過來看, 這兩週在網上與bbs 上爬的經驗告訴我:
+幾乎有一大堆資料都是舊的, 約是2001年左右. 包括英文中文繁簡都一樣, 沒跟上最新的作法.
+<P>現在是2004年二月, 也就是....不管windows 或linux 或別的, 軟體發展總有兩三年的先進期.
+回顧linux生下來也不過十年, 其中有1/3 的時間還處在先進期, 也就是剩下的2/3
+時間都是穩定期的東西!!這頗驚人的...
+<P>接著, 排定燒錄環境, 試燒了個ISO 檔成功!!接著是要寫些小script或alias , 
+作到能夠生ISO 檔. 另外有試了一下一個叫cdw 的簡單小程式, 算是cdrecord + 
+mkisofs 等東東的前端, 不過不順....還不如自己下指令與自寫的script快. 
+<P>另發現了自己在NT上壓的zip 的檔名的編碼很怪, 搞不懂到底是啥編碼....-_- 
+中文變成了一團亂, 有夠詭異!!剛想到, IE的myfav 轉出來的bookmark也有類似問題, 
+有點玄妙感....-_- 倒是靈機一動挖到了NTFS的mount 參數, 加上cp950 後就可以正常
+讀到中文檔名, 啦啦啦~~~ 看來很快就可以把整顆HD都光復到ext2下啦~~~ :P
+<P>另外個實驗證實了copy時高耗cpu 是因為用mc的關係....用cp則幾乎不吃CPU . 
+</BODY>
+</HTML>
